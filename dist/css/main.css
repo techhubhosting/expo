@@ -1,8 +1,4 @@
-@font-face {
-  font-family: "San Francisco";
-  font-weight: 100;
-  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-ultralight-webfont.woff");
-}
+
 .iframe-container{
     position: relative;
     width: 100%;
@@ -75,3 +71,25 @@ span{
 }
 
 .logo-edit{height: 70px;width: 100px;}
+.leftslide{
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+  }
+  .leftslideshow{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+  }
+.hidden{
+opacity: 0;
+filter: blur(5px);
+transform: translateY(-100%);
+transition: all 1s;
+}
+.show{
+opacity: 1;
+filter: blur(0);
+transform: translateY(0);
+}
